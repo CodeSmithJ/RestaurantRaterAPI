@@ -22,7 +22,7 @@ namespace RestaurantRaterAPI.Controllers
             }
 
             Restaurant restaurant = await _context.Restaurants.FindAsync(model.RestaurantId);
-            if(restaurant == null || ModelState.IsValid)
+            if (restaurant == null || !ModelState.IsValid)
             {
                 return BadRequest($"The target restaurant with the Id of {model.RestaurantId} does not exist.");
             }
@@ -30,7 +30,7 @@ namespace RestaurantRaterAPI.Controllers
             _context.Ratings.Add(model);
             if (await _context.SaveChangesAsync() == 1)
             {
-                return Ok($"You rated {restaurant.Name} successfully");
+                return Ok($"You rated {model.Restaurant.Name} successfully");
             }
 
             return InternalServerError();

@@ -14,7 +14,7 @@ namespace RestaurantRaterAPI.Controllers
     {
         private RestaurantDbContext _context = new RestaurantDbContext();
 
-        // 
+        // PostNew
         [HttpPost]
         public async Task<IHttpActionResult> PostRestaurant(Restaurant model)
         {

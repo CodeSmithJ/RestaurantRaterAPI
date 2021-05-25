@@ -32,7 +32,6 @@ namespace RestaurantRaterAPI.Models
             }
         }
 
-
         // AverageFoodScore
         // AverageEnvironmentScore
         // AverageCleanlinessScore
