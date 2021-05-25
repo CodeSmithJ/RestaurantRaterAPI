@@ -172,6 +172,7 @@
       <DependentUpon>202105251513211_add-migration InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\RestaurantDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
