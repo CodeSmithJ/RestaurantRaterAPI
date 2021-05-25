@@ -32,6 +32,11 @@ namespace RestaurantRaterAPI.Models
             }
         }
 
+
+        // AverageFoodScore
+        // AverageEnvironmentScore
+        // AverageCleanlinessScore
+
         public bool IsRecommended => Rating > 8.5;
     }
 }
